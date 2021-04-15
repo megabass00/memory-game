@@ -1,0 +1,22 @@
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  list-style-position: inside;
+  list-style: none;
+  max-width: 1100px;
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .game {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game {
+    max-width: 450px;
+  }
+}

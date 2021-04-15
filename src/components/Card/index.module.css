@@ -1,0 +1,55 @@
+.card {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 10px;
+  background: white;
+	box-shadow: 1px 3px 5px 1px #00000033;
+  user-select: none;
+}
+
+.back {
+  display: flex;
+  height: 100%;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: rgb(128, 128, 128);
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.front::before {    
+  content: "";
+  background: url('Images/background.svg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.15;
+}
+
+.image {
+  border-radius: 7px;
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .card {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    height: 70px;
+    width: 70px;
+  }
+}
